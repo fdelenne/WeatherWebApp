@@ -6,7 +6,7 @@ pipeline{
         
         stage('checkout'){
             steps{
-                checkout([$class: 'GitSCM', branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/fdelenne/ActivityAPI']]])
+                checkout([$class: 'GitSCM', branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/fdelenne/WeatherWebApp']]])
             }
         }
         
