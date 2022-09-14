@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: apiclima
+  namespace: apiclima
+  labels:
+    app: apiclima
+spec:
+  selector:
+    matchLabels:
+      app: apiclima
+  replicas: 5
+  template:
+    metadata:
+      labels:
+        app: apiclima
+    spec:
+      containers:
+      - name: apiclima
+        image: 113304117666.dkr.ecr.us-west-1.amazonaws.com/weather-deployment:latest
+        imagePullPolicy: IfNotPresent
+        ports:
+        - name: http
+        - containerPort: 80
+      nodeSelector:
+        kubernetes.io/os: linux
