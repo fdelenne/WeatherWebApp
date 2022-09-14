@@ -20,7 +20,7 @@ pipeline{
         stage('docker run'){
             steps{
                 script{
-                     sh 'docker run -d -p 8080:80 --rm --name imageapi ' + imageName
+                     sh 'docker run -d -p 5000:80 --rm --name imageapi ' + imageName
                 }
             }
         }

@@ -19,6 +19,6 @@ RUN apk add --no-cache apache2
 RUN  chmod +x /bin/APIweather.sh
 
 ENTRYPOINT crond -l 2 -f
-EXPOSE 8080
+EXPOSE 5000
 CMD [ "/usr/sbin/httpd", "-D", "FOREGROUND"]
 
