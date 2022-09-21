@@ -21,4 +21,3 @@ RUN  chmod +x /bin/APIweather.sh
 ENTRYPOINT crond -l 2 -f
 EXPOSE 5000
 CMD [ "/usr/sbin/httpd", "-D", "FOREGROUND"]
-
