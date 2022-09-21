@@ -21,7 +21,8 @@ echo $data > $pathjson
 
         echo "$(date)"
         date  >> 'output.html'
-
+        
+        echo "Hello world :)"
     cp output.html /var/www/localhost/htdocs/index.html
 
 
