@@ -20,10 +20,11 @@ echo $data > $pathjson
         echo " Humidity:  $(echo $data | jq .main.humidity) "%" "  >> 'output.html'
 
         echo "$(date)"
+
+        echo “Hello world can you see meeeee?” >>  'output.html' 
+
         date  >> 'output.html'
         
-
-        echo “Hello world can you see meeeee? :(” >>  'output.html'
         cp output.html /var/www/localhost/htdocs/index.html
 
 
