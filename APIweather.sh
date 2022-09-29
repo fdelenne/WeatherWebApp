@@ -21,7 +21,7 @@ echo $data > $pathjson
 
         echo "$(date)"
 
-        echo “Hello world Im testing new tagging......” >>  'output.html' 
+        echo “Bonjour world” >>  'output.html' 
 
         date  >> 'output.html'
         
