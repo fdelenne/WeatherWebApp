@@ -21,7 +21,7 @@ echo $data > $pathjson
 
         echo "$(date)"
 
-        echo “Testing testing pear 83 Fri 30 Sept ” >>  'output.html' 
+        echo “Testing testing banana 83 Mon 3 Oct ” >>  'output.html' 
 
         date  >> 'output.html'
         
